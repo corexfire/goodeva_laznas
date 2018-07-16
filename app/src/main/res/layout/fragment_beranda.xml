@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<ListView-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:id="@+id/listAcara"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:visibility="visible">-->
+
+    <!--</ListView>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/Recycler_View"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>-->
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <include layout="@layout/carousel"/>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:baselineAligned="false"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/btn_zakat_online"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardBackgroundColor="@android:color/white"
+                            card_view:cardElevation="2dp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="4dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/zakat_white"
+                                    android:padding="15dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Zakat Online"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal|center"
+                                    />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btn_infaq_online"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardBackgroundColor="@android:color/white"
+                            card_view:cardElevation="2dp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="4dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/infaq_white"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Infaq Online"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal|center"
+                                    />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btn_donasi_online"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardBackgroundColor="@android:color/white"
+                            card_view:cardElevation="2dp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="4dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/donasi_white"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Donasi Online"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal|center"
+                                    />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:baselineAligned="false"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/btn_kalkulator"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardBackgroundColor="@android:color/white"
+                            card_view:cardElevation="2dp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="4dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:src="@drawable/calculator_white"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Kalkulator"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal|center"
+                                    />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btn_panduan_zakat"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardBackgroundColor="@android:color/white"
+                            card_view:cardElevation="2dp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="4dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:padding="10dp"
+                                    android:src="@drawable/panduan_white"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Panduan Zakat"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal|center"
+                                    />
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/btn_galang_dana"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+                        <android.support.v7.widget.CardView
+                            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                            android:layout_gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            card_view:cardBackgroundColor="@android:color/white"
+                            card_view:cardElevation="2dp"
+                            card_view:cardUseCompatPadding="true"
+                            card_view:cardCornerRadius="4dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3"
+                                    android:padding="10dp"
+                                    android:src="@drawable/galang_white"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="Galang Dana"
+                                    android:textSize="10sp"
+                                    android:gravity="center_horizontal|center"
+                                    />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fotoAcara"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="115dp"
+            android:src="@drawable/laznas" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <TextView
+                android:id="@+id/namaAcara"
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:maxLines="2"
+                android:textSize="14dp"
+                android:text="Judul Galang Dana"
+
+                android:textColor="@color/hitam"
+                />
+
+            <RelativeLayout
+                android:id="@+id/detailAcara"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/namaAcara">
+
+                <RelativeLayout
+                    android:id="@+id/jumlahDonasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/harga_icon"
+                        android:id="@+id/iconHarga"/>
+                    <TextView
+                        android:layout_toRightOf="@id/iconHarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Donasi"
+                        android:textSize="10dp"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/hargaAcara"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tanggalAcara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/jumlahDonasi"
+
+                    android:paddingBottom="25dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/waktu_icon"
+                        android:id="@+id/iconWaktu"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:layout_toRightOf="@id/iconWaktu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Pemesanan"
+                        android:textSize="10dp"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/waktuAcara"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

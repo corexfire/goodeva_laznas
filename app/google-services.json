@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "701519895977",
+    "firebase_url": "https://laznas-2a2c4.firebaseio.com",
+    "project_id": "laznas-2a2c4",
+    "storage_bucket": "laznas-2a2c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701519895977:android:2c89dbb033b22cab",
+        "android_client_info": {
+          "package_name": "com.bristol.laznas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701519895977-ithfh5vttr2c55psuk5k6f17aejjg7f0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGGx-ttLLjH1C-iqtiYfuEM__ZKpBTr1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

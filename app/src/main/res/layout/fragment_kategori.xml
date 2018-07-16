@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="@color/orangetua"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp"
+                >
+                <!--<TextView-->
+                    <!--android:id="@+id/judul"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Title"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/hitam" />-->
+                <TextView
+                    android:id="@+id/judul1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 1 Yang Panjang Banget Judulnya Lebih dari 2 Baris dan Lebih panjang lagi.."
+                    android:maxLines="2"
+                    android:textColor="@color/hitam" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/gambar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image1"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/orangetua"
+                >
+                <!--<TextView-->
+                    <!--android:id="@+id/judul"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Title"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/hitam" />-->
+                <TextView
+                    android:id="@+id/judul2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 1 Yang Panjang Banget Judulnya Lebih dari 2 Baris dan Lebih panjang lagi.."
+                    android:maxLines="2"
+                    android:textColor="@color/hitam" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/gambar2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image1"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/orangetua"
+                >
+                <!--<TextView-->
+                    <!--android:id="@+id/judul"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Title"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/hitam" />-->
+                <TextView
+                    android:id="@+id/judul3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 1 Yang Panjang Banget Judulnya Lebih dari 2 Baris dan Lebih panjang lagi.."
+                    android:maxLines="2"
+                    android:textColor="@color/hitam" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/gambar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image1"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/orangetua"
+                >
+                <!--<TextView-->
+                    <!--android:id="@+id/judul"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Title"-->
+                    <!--android:maxLines="1"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/hitam" />-->
+                <TextView
+                    android:id="@+id/judul4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Judul Berita 1 Yang Panjang Banget Judulnya Lebih dari 2 Baris dan Lebih panjang lagi.."
+                    android:maxLines="2"
+                    android:textColor="@color/hitam" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:id="@+id/gambar4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/image1"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingRight="5dp"
+                android:tag="1">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:tag="2">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_berita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:background="@color/colorPrimaryGreen"
+                android:tag="4">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_semua_berita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Lihat Semua Berita"
+                    android:textStyle="bold"
+                    android:textColor="@color/orangetua" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

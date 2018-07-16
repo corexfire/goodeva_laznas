@@ -1,0 +1,18 @@
+<tabs>
+    <tab
+        id="@+id/tabBeranda"
+        icon="@drawable/ic_home_icon"
+        title="Beranda"/>
+    <tab
+        id="@+id/tabDonasi"
+        icon="@drawable/ic_donate"
+        title="Mitra"/>
+    <tab
+        id="@+id/tabKategori"
+        icon="@drawable/ic_kategori_icon"
+        title="Berita"/>
+    <tab
+        id="@+id/tabProfil"
+        icon="@drawable/ic_profil_icon"
+        title="Profil"/>
+</tabs>

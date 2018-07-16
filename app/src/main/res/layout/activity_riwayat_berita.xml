@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_acara_kategori"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGrey"
+    android:orientation="vertical"
+    tools:context="com.bristol.laznas.DaftarAcara">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryGreen"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            android:id="@+id/btn_left"
+            style="@style/toolbarIcon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_left"
+
+            />
+
+        <TextView
+            android:id="@+id/toolbarText"
+            style="@style/toolbarText"
+            android:text="Semua Berita" />
+    </android.support.v7.widget.Toolbar>
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/listAcara"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="56dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5.0sp"
+        android:orientation="vertical" />
+
+</LinearLayout>

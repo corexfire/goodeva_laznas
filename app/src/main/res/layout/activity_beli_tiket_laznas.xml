@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_beli_tiket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    tools:context="com.bristol.laznas.BeliTiketActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            style="@style/toolbarIcon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/laznas" />
+
+        <TextView
+            style="@style/toolbarText"
+            android:text="Donasi" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Keterangan Acara -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:background="@color/abuabumuda"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/fotoAcara"
+                    android:layout_width="0dp"
+                    android:layout_height="84dp"
+                    android:layout_weight="0.85"
+                    android:src="@drawable/kategori_1" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/judulAcara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seminar Google Design Sprint"
+                        android:textColor="@color/hitam"
+                        android:textStyle="bold" />
+
+                    <!-- Waktu acara -->
+                    <RelativeLayout
+                        android:id="@+id/waktuAcara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/judulAcara"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                    </RelativeLayout>
+
+
+
+                    <!-- Biaya acara -->
+                    <RelativeLayout
+                        android:id="@+id/biayaAcara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/waktuAcara"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginTop="3dp">
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Jumlah Tiket -->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/judulMetodePembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Metode Pembayaran"
+                    android:textColor="@color/hitam" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/judulMetodePembayaran"
+                    android:paddingTop="10dp">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+
+
+                            <RadioButton
+                                android:id="@+id/radioTransferATM"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text='Transfer ATM (Virtual Account)'/>
+
+                            <TextView
+                                android:text='Account number: '
+                                android:textStyle="bold"
+                                android:layout_weight="0.89"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="33dp"
+                                android:layout_marginStart="33dp"
+                                android:id="@+id/textView3"
+                                android:paddingBottom="5dp"/>
+                            <TextView
+
+                                android:id="@+id/idNomorPembayaran"
+                                android:text='300000626'
+                                android:textStyle="bold"
+                                android:layout_weight="0.89"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="33dp"
+                                android:layout_marginStart="33dp"
+                                android:paddingBottom="5dp"/>
+
+                            <TextView
+                                android:text='\n1. Melalui ATM BSM\n
+- Masuk ke Menu "Pemindahbukuan"\n
+- Pilih BSM\n
+- masukkan nominal transaksi\n
+- masukkan nomor pembayaran sbb : 900 + 5005 + Account Number (3XX-XXX-XXX)\n
+- Konfirmasi pembayaran\n
+- Selesaikan proses transaksi\n\n
+
+2. Melalui Internet Banking BSM\n
+- Masuk ke Menu "Pembayaran"\n
+- Pilih jenis pembayaran "Institusi"\n
+- Pilih nama lembaga "Web Laznas BSM"\n
+- masukkan nomor pembayaran sbb : Account Number (3XX-XXX-XXX)\n
+- Konfirmasi pembayaran\n
+- Masukkan TAN dan Password otorisasi untuk melanjutkan pembayaran\n
+\n
+3. Melalui ATM Bersama/Prima\n
+- Pilih menu Transfer ke Bank Lain\n
+- Masukkan nomor pembayaran sbb : 451 + 900 + 5005 + Account Number (3XX-XXX-XXX)\n
+- Masukkan nominal\n
+- Akan muncul konfirmasi transfer\n
+- Jika sudah sesuai bisa dilanjutkan dengan memproses transfer\n'
+                                android:layout_weight="0.89"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="33dp"
+                                android:layout_marginStart="33dp"
+                                android:id="@+id/textView3"
+                                android:paddingBottom="10dp"/>
+
+                        </RadioGroup>
+                    </RadioGroup>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        style="@style/buttonBawah"
+        android:onClick="toTagihan"
+        android:text="Lanjutkan" />
+
+</RelativeLayout>

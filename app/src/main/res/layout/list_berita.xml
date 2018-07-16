@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:onClick="toAcara"
+    android:background="@color/orangetua"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="10dp"
+            >
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:textColor="@color/hitam" />
+            <TextView
+                android:id="@+id/judul1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Judul Berita 1 Yang Panjang Banget Judulnya Lebih dari 2 Baris dan Lebih panjang lagi.."
+                android:maxLines="2"
+                android:textColor="@color/hitam" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/image1"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

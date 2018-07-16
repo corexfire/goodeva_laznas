@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#464646</color>
+    <color name="colorAccent">#464646</color>
+
+    <color name="colorPrimaryGreen">#036b54</color>
+    <color name="colorSecondaryYellow">#eccf32</color>
+    <color name="colorSecondaryGreen">#02b28c</color>
+    <!-- warna utama -->
+    <color name="orangetua">#fff</color>
+    <color name="orangemuda">#ffe105</color>
+    <color name="orangegelap">#b88d09</color>
+
+    <color name="abuabutua">#464646</color>
+    <color name="abuabusedang">#d1d1d1</color>
+    <color name="abuabumuda">#f2f2f2</color>
+
+
+    <color name="hitam">#464646</color>
+    <color name="putih">#fff</color>
+    <color name="colorGrey">#a1a1a1</color>
+    <color name="colorLightGrey">#e9e9e9</color>
+</resources>

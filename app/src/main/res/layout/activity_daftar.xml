@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_daftar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.bristol.laznas.DaftarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            style="@style/toolbarIcon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/laznas" />
+
+        <TextView
+            style="@style/toolbarText"
+            android:text="Buat Akun Baru" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/datadirititle"
+                style="@style/daftarSubtitle"
+                android:text="Data Diri" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/email_et"
+                    style="@style/daftarTextField"
+                    android:hint="email"
+                    android:inputType="textEmailAddress" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/email_icon_grey" />
+            </RelativeLayout>
+
+
+
+            <!-- Password -->
+            <TextView
+                style="@style/daftarSubtitle"
+                android:layout_marginTop="20dp"
+                android:text="Password" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/password_icon_grey" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/daftarTextField"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:hint="password"
+                    android:inputType="textPassword" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_password_konfirm"
+                    style="@style/daftarTextField"
+                    android:hint="konfirmasi password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/password_icon_grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/sudahpunyaakun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sudah punya akun?  " />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/sudahpunyaakun"
+                        android:onClick="toMasukActivity"
+                        android:text="Masuk"
+                        android:textColor="@color/hitam"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_daftar"
+        style="@style/buttonBawah"
+        android:text="Daftar" />
+
+</RelativeLayout>

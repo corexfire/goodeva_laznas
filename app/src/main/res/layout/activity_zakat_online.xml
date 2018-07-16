@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ZakatOnlineActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/carousel"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/imgHeader"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/shape1"
+                android:src="@drawable/gold"
+                android:padding="60dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/titleZakat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Zakat Onine"
+                    android:textSize="25sp"
+
+                    />
+                <TextView
+                    android:id="@+id/keterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pembayaran zakat dan shodaqoh melalui Laznas BSM secara onine"
+                    android:textSize="15sp"
+                    />
+                <Button
+                    android:id="@+id/btn_panduan"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@color/colorPrimaryGreen"
+                    android:text="Panduan"
+                    android:textColor="@color/orangetua"
+                    android:textAllCaps="false"
+                    android:textSize="10sp"
+                    />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_online"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Masukkan Jumlah :"
+                        android:textSize="15sp"
+                        />
+                    <EditText
+                        android:id="@+id/nominal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_custom"
+                        android:padding="10dp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_penghasilan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Penghasilan Anda (perbulan)"
+                        />
+                    <EditText
+                        android:id="@+id/penghasilan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pendapatan lain (optional)"
+                        />
+                    <EditText
+                        android:id="@+id/pendapatan_lain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hutang/Cicilan (optional)"
+                        />
+                    <EditText
+                        android:id="@+id/hutang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/nishab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Harga Emas Saat Ini"
+                        android:textColor="@color/colorPrimaryGreen"
+                        />
+                    <TextView
+                        android:id="@+id/harga_emas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryGreen"
+                        android:text="Nishab (85 gram)"
+                        />
+                    <TextView
+                        android:id="@+id/total_nishab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_emas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jumlah Emas yang dimiliki dalam gram"
+                        />
+                    <EditText
+                        android:id="@+id/jumlah_emas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_perdagangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Modal"
+                        />
+                    <EditText
+                        android:id="@+id/modal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Keuntungan"
+                        />
+                    <EditText
+                        android:id="@+id/keuntungan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_rikaz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Taksiran Harga"
+                        />
+                    <EditText
+                        android:id="@+id/rikaz"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_tabungan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Saldo Tabungan"
+                        />
+                    <EditText
+                        android:id="@+id/tabungan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/group_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Zakat yang harus di bayarkan"
+                        />
+                    <TextView
+                        android:id="@+id/total_zakat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_pertanian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hasil Panen (kg)"
+                        />
+                    <EditText
+                        android:id="@+id/hasil_panen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Zakat dengan pemeliharaan"
+                        />
+                    <TextView
+                        android:id="@+id/total_zakat_pemeliharaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Zakat tanpa pemeliharaan"
+                        />
+                    <TextView
+                        android:id="@+id/total_zakat_tanpa_pemeliharaan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="0"
+                        android:background="@drawable/edit_text_custom"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/zakat_ternak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Unta"
+                        />
+                        <EditText
+                            android:id="@+id/unta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="0"
+                            android:background="@drawable/edit_text_custom"
+                            />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Zakat Unta"
+                        />
+                        <TextView
+                            android:id="@+id/totan_zakat_unta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="0"
+                            android:background="@drawable/edit_text_custom"
+                            />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kambing/Domba"
+                        />
+
+                        <EditText
+                            android:id="@+id/kambing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="0"
+                            android:background="@drawable/edit_text_custom"
+                            />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Zakat Kambing/Domba"
+                        />
+                        <TextView
+                            android:id="@+id/totan_zakat_kambing"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="0"
+                            android:background="@drawable/edit_text_custom"
+                            />
+
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sapi"
+                        />
+                        <EditText
+                            android:id="@+id/sapi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="0"
+                            android:background="@drawable/edit_text_custom"
+                            />
+                    <TextView
+                        android:textSize="15sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Zakat Sapi"
+                        />
+                        <TextView
+                            android:id="@+id/totan_zakat_sapi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:text="0"
+                            android:background="@drawable/edit_text_custom"
+                            />
+
+
+
+                </LinearLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/btn_zakat_sekarang"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Zakat Sekarang"
+                    android:background="@color/colorPrimaryGreen"
+                    android:textColor="@color/orangetua"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

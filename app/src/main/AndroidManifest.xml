@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bristol.laznas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".LaznasApp"
+        android:allowBackup="true"
+        android:icon="@drawable/laznas"
+        android:label="Laznas BSMU"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".MainActivity_">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- <activity android:name=".KategoriActivity_" /> -->
+        <!-- <activity android:name=".ProfilActivity_" /> -->
+        <activity android:name=".AcaraActivity_" />
+        <activity android:name=".AcaraActivityLaznas_" />
+        <activity android:name=".ZakatActivityLaznas_" />
+        <activity android:name=".BeliTiketActivity_" />
+        <activity android:name=".BeliTiketActivityLaznas_" />
+        <activity android:name=".BeritaActivityLaznas_" />
+        <activity android:name=".TagihanActivity_" />
+        <activity android:name=".KonfirmasiTagihanActivity_" />
+        <activity android:name=".EditProfilActivity_" />
+        <activity android:name=".DaftarActivity_" />
+        <activity android:name=".MasukActivity_" />
+        <activity android:name=".MasukActivityLaznas_" />
+        <activity android:name=".SplashScreen" />
+        <activity android:name=".PesertaAcara" />
+        <activity android:name=".DaftarAcara" />
+        <activity android:name=".DaftarRiwayatDonasi" />
+        <activity android:name=".DaftarRiwayatGalangDana" />
+        <activity android:name=".DaftarRiwayatTransaksi" />
+        <activity android:name=".DaftarRiwayatBerita" />
+        <activity android:name=".DetailPembayaranZakatActivity_" />
+        <activity android:name=".CariDonasiActivity_" />
+
+        <!--
+        ATTENTION: This was auto-generated to add Google Play services to your project for
+        App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".CariDonasiActivity" />
+        <activity android:name=".KalkulatorActivity_" />
+        <activity android:name=".GalangDanaActivity_" />
+        <activity android:name=".GalangDanaDetailActivity_" />
+        <activity
+            android:name=".ZakatOnlineActivity_"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".PanduanActivity_" />
+        <activity android:name=".PanduanDetailActivity_"></activity>
+    </application>
+
+</manifest>

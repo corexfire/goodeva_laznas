@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Lesgo</string>
+
+    <string-array name="jumlahTiketArray">
+        <item>10.000</item>
+        <item>20.000</item>
+        <item>30.000</item>
+        <item>40.000</item>
+        <item>50.000</item>
+    </string-array>
+
+    <string name="error_invalid_email_not_valid">%s is not a valid email</string>
+    <string name="error_invalid_donasi_not_valid">%s is not valid</string>
+    <string name="error_cannot_be_empty">This cannot be empty.</string>
+    <string name="error_invalid_password_konfirm_not_valid">check again your password.</string>
+    <string name="error_invalid_password_not_valid">Must be more than 6 character.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kalkulator">Kalkulator</string>
+    <string name="kalkulator_deskripsi">Jenis dan cara perhitungan zakat</string>
+    <string name="emas">Emas</string>
+    <string name="hasil_pertanian">Hasil Pertanian</string>
+    <string name="barang_dagangan">Barang Dagangan</string>
+    <string name="binatang_ternak">Binatang Ternak</string>
+    <string name="hasil_tambang">Hasil Tambang</string>
+    <string name="rikaaz">Rikaaz</string>
+    <string name="hasil_profesi">Hasil Profesi</string>
+
+    <string-array name="panduan_header">
+        <item>
+            Zakat Fitrah
+        </item>
+        <item>
+            Fidyah
+        </item>
+        <item>
+            Zakat Tabungan
+        </item>
+        <item>
+            Zakat Emas dan Perak
+        </item>
+        <item>
+            Zakat Hewan Ternak
+        </item>
+        <item>
+            Zakat Pertanian
+        </item>
+        <item>
+            Zakat Perdagangan
+        </item>
+        <item>
+            Zakat Hasil Tambang
+        </item>
+        <item>
+            Zakat Rikaz
+        </item>
+        <item>
+            Zakat Profesi
+        </item>
+    </string-array>
+    <string-array name="panduan_description">
+        <item>
+            Zakat fitrah adalah zakat yang harus ditunaikan seseorang yang telah memiliki kemampuan untuk menunaikan dan wajib dikeluarkan sekali setahun, menjelang Idul Fitri. Haltersebut yang menjadi pembeda zakat fitrah dengan zakat lainnya.
+        </item>
+        <item>
+            Pada dasarnya, Allah SWT mewajibkan berpuasa kepada semua kaum muslimin dibulan Ramadhan bagi mereka yang sehat dan memberikan keringanan kepada mereka berupa fidyah yakni dengan memberi makan orang miskin. \n\n Fidyah diberikan sesuai dengan jumlah hari dia meninggalkan puasa, yakni setara dengan memberi makan semalam untuk satu orang miskin. \n\n
+            Orang yang harus membayar fidyah, karena tidak berpuasa : \n
+            1. Orang Sakit \n
+            2. Orang Tua \n
+            3. Ibu Hamil atau menyusui
+        </item>
+        <item>
+            Merupakan zakat yang dikeluarkan dari tabungan kita selama memenuhi kriteria untuk dizakatkan dan terpenuhi batas minimal wajib zakat (nishab) serta sudah tersimpan selama satu tahun (haul). Berupa uang, emas atau perak yang merpakan milik pribadi secara utuh. \n\n
+            Jenis Tabungan yang wajib dikeluarkan zakat nya : \n
+            1. Simpanan bank \n
+            2. Tabungan Pensiun \n
+            3. Safe Deposit Box (SDB)
+        </item>
+        <item>
+            Merupakan zakat yang wajib hukumnya dikeluarkan oleh seorah muslimin dan muslimah yang mempunyai harta emas dan perak apabila telah mencapai nisab dan haul
+        </item>
+        <item>
+            Zakat yang meliputi hasil dari peternakan hewan. Perhitungan zakat untuk tiap tipe hewan ternak baik nisab maupun kadarnya berbeda-beda dan sifatnya bertingkat. Sedangkan hasilnya yakni satu tahun untuk setiap hewan
+        </item>
+        <item>
+            Setiap tanaman yang merupakan makanan pokok dan dapat disimpan, menurut ulama syafi\'iah wajib dizakati objeknya, meliputi hasil tumbuh-tumbuhan atau tanaman yang bernilai ekonomis seperti biji-bijian, umbi-umbian.
+        </item>
+        <item>
+            Apabila nilai dagangannya telah mencapai seharga emas 93.8 gram atau perak 524 gram, maka wajib dikeluarkan zakatnya.
+        </item>
+        <item>
+            Hasil tambang emas atau perak apabila telah sampai nisabnya, maka wajib dikeluarkan zakatya pada waktu oenambangan dilakukan tanpa harus dimiliki selama satu tahun.
+        </item>
+        <item>
+            Apabila kita menemukan harta terpendam seperti emas dan perak, maka wajib mengeluarkan zakatnya 20%.
+        </item>
+        <item>
+            Zakat yang dikeluarkan dari penghasilan profesi bila telah mencapai nisab. Profesi tersebut misalnya pegawai negeri atau swasta, konsultan, dokter, notaris, akuntan, artis dan wiraswasta.
+        </item>
+    </string-array>
+</resources>

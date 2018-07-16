@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.bristol.laznas.EditProfilActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            style="@style/toolbarIcon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            style="@style/toolbarText"
+            android:text="Ubah Profil" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/datadirititle"
+                style="@style/daftarSubtitle"
+                android:text="Data Diri" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/daftarTextField"
+                    android:hint="nama lengkap" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/profil_icon_grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/daftarTextField"
+                    android:hint="username" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/profil_icon_grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/daftarTextField"
+                    android:hint="email"
+                    android:inputType="textEmailAddress" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/email_icon_grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/daftarTextField"
+                    android:hint="nomor handphone"
+                    android:inputType="number" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/handphone_icon_grey" />
+            </RelativeLayout>
+
+            <!-- Password -->
+            <TextView
+                style="@style/daftarSubtitle"
+                android:layout_marginTop="20dp"
+                android:text="Password" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/daftarTextField"
+                    android:hint="password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/password_icon_grey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    style="@style/daftarTextField"
+                    android:hint="konfirmasi password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/password_icon_grey" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        style="@style/buttonBawah"
+        android:text="Simpan" />
+
+</RelativeLayout>

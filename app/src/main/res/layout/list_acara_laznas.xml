@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+
+        <LinearLayout
+            android:background="@color/colorPrimaryGreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fotoAcara"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scaleType="fitXY"
+
+                android:src="@drawable/gerai" />
+
+            <RelativeLayout
+                android:background="@color/orangetua"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/tanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="01/01/2018"
+                    android:textSize="12dp"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimaryGreen"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_below="@+id/tanggal"
+                    android:id="@+id/namaAcara"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="2"
+                    android:text="Seminar Google Design Sprint Pada UI Entrepreneurship yang sangat panjang durasinya"
+                    android:textColor="@color/hitam"
+                    android:textSize="15dp" />
+
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/detailAcara"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/deskripsiAcara">
+
+                    <RelativeLayout
+                        android:id="@+id/jumlahDonasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <ImageView
+                            android:id="@+id/iconHarga"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:src="@drawable/harga_icon" />
+
+                        <TextView
+                            android:id="@+id/hargaAcara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/iconHarga"
+                            android:paddingLeft="5dp"
+                            android:text="Gratis"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tanggalAcara"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/jumlahDonasi"
+
+                        android:paddingBottom="10dp">
+
+                        <ImageView
+                            android:id="@+id/iconWaktu"
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:src="@drawable/waktu_icon" />
+
+                        <TextView
+                            android:id="@+id/waktuAcara"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/iconWaktu"
+                            android:paddingLeft="5dp"
+                            android:text="24 Sept 2016"
+                            android:textSize="10dp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/deskripsiAcara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Design Sprint merupakan metodologi pengembangan produk teknologi yang dikembangkan oleh Google sejak 2012."
+                    android:textSize="12dp"
+                    android:layout_below="@+id/namaAcara"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:id="@+id/target"
+                    android:layout_below="@+id/deskripsiAcara"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Target Donasi"
+                        android:textSize="10sp"
+                        />
+                    <TextView
+                        android:id="@+id/target_donasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. 0"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorPrimaryGreen"
+                        />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Terkumpul"
+                            android:textSize="10sp"
+                            />
+                        <TextView
+                            android:id="@+id/terkumpul"
+                            android:gravity="right"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Rp. 0"
+                            android:textSize="10sp"
+                            android:textColor="@color/colorPrimaryGreen"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/target"
+                    android:orientation="horizontal"
+                    android:id="@+id/progress"
+                    >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:progressTint="@color/colorPrimaryGreen"
+                        />
+                    <TextView
+                        android:id="@+id/persentaseProgress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:text="0%"
+                        android:textSize="10sp"
+                        android:gravity="right"
+                        android:textColor="@color/colorPrimaryGreen"
+                        />
+                </LinearLayout>
+
+                <Button
+                    android:layout_below="@+id/progress"
+                    android:id="@+id/btn_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/colorPrimaryGreen"
+                    android:text="Input Donasi"
+                    android:textColor="@color/orangetua"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@android:color/darker_gray" />-->
+
+</LinearLayout>

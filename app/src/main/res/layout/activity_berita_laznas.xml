@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bristol.laznas.AcaraActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryGreen"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+
+            style="@style/toolbarIcon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/laznas" />
+
+        <TextView
+            style="@style/toolbarText"
+            android:text="Berita" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/fotoAcara"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/kategori_1"
+                 />
+
+            <LinearLayout
+                android:id="@+id/mainInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fotoAcara"
+                android:layout_marginTop="2dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mainInfo"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="15dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/tv_nama_acara"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Seminar Google Design Sprint"
+                        android:textColor="@color/hitam"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="5dp"
+                        android:text="Compfest 8 kembali menghadirkan seminar mutakhir dengan pembicara Boris Hasian ea ea. Keren banget pasti acara, segera daftar untuk kamu para penggiat startup tanah air."
+                        android:textSize="12dp"
+                        android:layout_weight="2.16" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/abuabumuda"></LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/lokasi"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/deskripsi"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:padding="15dp">-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/kontak"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/lokasi"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/website"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/kontak"-->
+                <!--android:orientation="vertical">-->
+
+            <!--</LinearLayout>-->
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--<Button-->
+        <!--style="@style/buttonBawah"-->
+        <!--android:text=" " />-->
+
+</RelativeLayout>
+

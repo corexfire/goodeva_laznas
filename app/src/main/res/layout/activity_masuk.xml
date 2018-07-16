@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_masuk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryGreen"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context="com.bristol.laznas.MasukActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/laznas_bsm" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/masukTextField"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="email"
+                    android:textCursorDrawable="@null"
+                    />
+
+                <ImageView
+                    style="@style/daftarIcon"
+
+                    android:src="@drawable/ic_securedletter" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/et_password"
+                    style="@style/masukTextField"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="password"
+                    android:textCursorDrawable="@null"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    style="@style/daftarIcon"
+                    android:src="@drawable/ic_password" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_masuk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorSecondaryGreen"
+                android:text="Masuk"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/orangetua" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot your password?"
+                android:gravity="center_horizontal"
+                android:textColor="@color/orangetua"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|bottom"
+            >
+            <TextView
+                android:id="@+id/tidakpunyaakun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orangetua"
+                android:text="Tidak punya akun?  " />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tidakpunyaakun"
+                android:onClick="toDaftarActivity"
+                android:text="Daftar"
+                android:textColor="@color/orangetua"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

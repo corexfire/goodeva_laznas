@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_konfirmasi_tagihan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.bristol.laznas.KonfirmasiTagihanActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageView
+            style="@style/toolbarIcon"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            style="@style/toolbarText"
+            android:text="Konfirmasi Pembayaran" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:paddingBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/konfirmasiPembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Konfirmasi pembayaran"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/konfirmasiPembayaran"
+                    android:text="Proyek Donasi Laznas"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/daftarSubtitle"
+                android:layout_marginTop="10dp"
+                android:text="Nama Pengirim" />
+
+            <EditText
+                style="@style/konfirmasiPembayaranTextField"
+                android:hint="nama pengirim" />
+
+            <TextView
+                style="@style/daftarSubtitle"
+                android:layout_marginTop="10dp"
+                android:text="Nomor Rekening" />
+
+            <EditText
+                style="@style/konfirmasiPembayaranTextField"
+                android:hint="nomor rekening"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/daftarSubtitle"
+                android:layout_marginTop="10dp"
+                android:text="Tanggal Pembayaran" />
+
+            <EditText
+                android:id="@+id/tanggalPembayaran"
+                style="@style/konfirmasiPembayaranTextField"
+                android:focusableInTouchMode="false"
+                android:hint="tanggal pembayaran" />
+
+            <TextView
+                style="@style/daftarSubtitle"
+                android:layout_marginTop="10dp"
+                android:text="Jumlah Pembayaran" />
+
+            <EditText
+                style="@style/konfirmasiPembayaranTextField"
+                android:hint="jumlah pembayaran"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        style="@style/buttonBawah"
+        android:text="Kirim" />
+
+</RelativeLayout>
