@@ -41,7 +41,7 @@ public class SahabatAdapter extends
         public TextView terkumpul;
         public TextView persentaseProgress;
         public ProgressBar progressBar;
-        public Button messageButton;
+        public Button btn_input;
         public View mview;
 
         // We also create a constructor that accepts the entire item row
@@ -65,6 +65,7 @@ public class SahabatAdapter extends
             terkumpul = (TextView) itemView.findViewById(R.id.terkumpul);
             persentaseProgress = (TextView) itemView.findViewById(R.id.persentaseProgress);
             progressBar = (ProgressBar) itemView.findViewById(R.id.progressBar);
+            btn_input = (Button) itemView.findViewById(R.id.btn_input);
 
 
             //messageButton = (Button) itemView.findViewById(R.id.message_button);
@@ -124,6 +125,7 @@ public class SahabatAdapter extends
         textViewBatasDonasi.setText(contact.getBatasWaktu());
         TextView textViewTargetDonasi = viewHolder.target_donasi;
         TextView textViewTerkumpul = viewHolder.terkumpul;
+        Button btn_input = viewHolder.btn_input;
         if(isInteger(contact.getTekumpul())) {
             textViewTerkumpul.setText(convertRupiah.ConvertRupiah(contact.getTekumpul()));
         }
@@ -148,6 +150,21 @@ public class SahabatAdapter extends
             imageView1.setVisibility(View.INVISIBLE);
             ImageView imageView2 = viewHolder.imgView2;
             imageView2.setVisibility(View.INVISIBLE);
+            btn_input.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), ZakatActivityLaznas_.class);
+                    intent.putExtra("nid", contact.getNID());
+                    intent.putExtra("deskripsi", contact.getDeskripsi());
+                    intent.putExtra("nama", contact.getName());
+                    intent.putExtra("batas_waktu", contact.getBatasWaktu());
+                    intent.putExtra("target", "" + contact.getTarget() + "");
+                    intent.putExtra("gambar", contact.getImage());
+                    intent.putExtra("terkumpul", contact.getTekumpul());
+                    v.getContext().startActivity(intent);
+                }
+            });
+
             viewHolder.mview.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -179,6 +196,20 @@ public class SahabatAdapter extends
             if(isInteger(contact.getTarget())) {
                 textViewTargetDonasi.setText(convertRupiah.ConvertRupiah(contact.getTarget()));
             }
+            btn_input.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(v.getContext(), ZakatActivityLaznas_.class);
+                    intent.putExtra("nid", contact.getNID());
+                    intent.putExtra("deskripsi", contact.getDeskripsi());
+                    intent.putExtra("nama", contact.getName());
+                    intent.putExtra("batas_waktu", contact.getBatasWaktu());
+                    intent.putExtra("target", "" + contact.getTarget() + "");
+                    intent.putExtra("gambar", contact.getImage());
+                    intent.putExtra("terkumpul", contact.getTekumpul());
+                    v.getContext().startActivity(intent);
+                }
+            });
             viewHolder.mview.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
