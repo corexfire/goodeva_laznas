@@ -199,12 +199,12 @@ public class SahabatAdapter extends
             btn_input.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(v.getContext(), ZakatActivityLaznas_.class);
+                    Intent intent = new Intent(v.getContext(), AcaraActivityLaznas_.class);
                     intent.putExtra("nid", contact.getNID());
                     intent.putExtra("deskripsi", contact.getDeskripsi());
                     intent.putExtra("nama", contact.getName());
                     intent.putExtra("batas_waktu", contact.getBatasWaktu());
-                    intent.putExtra("target", "" + contact.getTarget() + "");
+                    intent.putExtra("target", contact.getTarget() );
                     intent.putExtra("gambar", contact.getImage());
                     intent.putExtra("terkumpul", contact.getTekumpul());
                     v.getContext().startActivity(intent);
