@@ -98,22 +98,22 @@ public class SahabatAmilFragment extends Fragment {
         mListRecyclerViewAcara = (RecyclerView) rootViewDonasi.findViewById(R.id.rv_Donasi);
         mListRecyclerViewAcara.setLayoutManager(mLinearLayoutManager);
 
-        int flag = ((LaznasApp) getActivity().getApplication()).getFlag();
-        Log.v(TAG, "flag: " + flag);
-        if(flag != 2){
+//        int flag = ((LaznasApp) getActivity().getApplication()).getFlag();
+//        Log.v(TAG, "flag: " + flag);
+//        if(flag != 2){
             Donasi();
-        }
-        else{
-            donasi = SahabatModel.createDonasiList(((LaznasApp) getActivity().getApplication()).getNidArray(),
-                    ((LaznasApp) getActivity().getApplication()).getJudulArray(),
-                    ((LaznasApp) getActivity().getApplication()).getTargetArray(),
-                    ((LaznasApp) getActivity().getApplication()).getBatasWaktuArray(),
-                    ((LaznasApp) getActivity().getApplication()).getDeskripsiArray(),
-                    ((LaznasApp) getActivity().getApplication()).getImageArray(),
-                    ((LaznasApp) getActivity().getApplication()).getTerkumpulArray());
-            mAdapter = new SahabatAdapter(getActivity(), donasi);
-            mListRecyclerViewAcara.setAdapter(mAdapter);
-        }
+//        }
+//        else{
+//            donasi = SahabatModel.createDonasiList(((LaznasApp) getActivity().getApplication()).getNidArray(),
+//                    ((LaznasApp) getActivity().getApplication()).getJudulArray(),
+//                    ((LaznasApp) getActivity().getApplication()).getTargetArray(),
+//                    ((LaznasApp) getActivity().getApplication()).getBatasWaktuArray(),
+//                    ((LaznasApp) getActivity().getApplication()).getDeskripsiArray(),
+//                    ((LaznasApp) getActivity().getApplication()).getImageArray(),
+//                    ((LaznasApp) getActivity().getApplication()).getTerkumpulArray());
+//            mAdapter = new SahabatAdapter(getActivity(), donasi);
+//            mListRecyclerViewAcara.setAdapter(mAdapter);
+//        }
 
         return  rootViewDonasi;
     }
@@ -318,14 +318,14 @@ public class SahabatAmilFragment extends Fragment {
             //Perform all UI changes here
             //tvNama.setText(name);
 
-            ((LaznasApp) getActivity().getApplication()).setFlag(2);
-            ((LaznasApp) getActivity().getApplication()).setNidArray(nidArray);
-            ((LaznasApp) getActivity().getApplication()).setJudulArray(judulArray);
-            ((LaznasApp) getActivity().getApplication()).setTargetArray(targetArray);
-            ((LaznasApp) getActivity().getApplication()).setBatasWaktuArray(batasWaktuArray);
-            ((LaznasApp) getActivity().getApplication()).setDeskripsiArray(deskripsiArray);
-            ((LaznasApp) getActivity().getApplication()).setImageArray(imageArray);
-            ((LaznasApp) getActivity().getApplication()).setTerkumpulArray(terkumpulArray);
+//            ((LaznasApp) getActivity().getApplication()).setFlag(2);
+//            ((LaznasApp) getActivity().getApplication()).setNidArray(nidArray);
+//            ((LaznasApp) getActivity().getApplication()).setJudulArray(judulArray);
+//            ((LaznasApp) getActivity().getApplication()).setTargetArray(targetArray);
+//            ((LaznasApp) getActivity().getApplication()).setBatasWaktuArray(batasWaktuArray);
+//            ((LaznasApp) getActivity().getApplication()).setDeskripsiArray(deskripsiArray);
+//            ((LaznasApp) getActivity().getApplication()).setImageArray(imageArray);
+//            ((LaznasApp) getActivity().getApplication()).setTerkumpulArray(terkumpulArray);
 
             donasi = SahabatModel.createDonasiList(nidArray, judulArray, targetArray, batasWaktuArray,
                     deskripsiArray, imageArray, terkumpulArray);

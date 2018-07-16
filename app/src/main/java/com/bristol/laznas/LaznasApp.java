@@ -63,7 +63,7 @@ public class LaznasApp extends Application {
         return imageArray;
     }
     public ArrayList<String> getTerkumpulArray() {
-        return imageArray;
+        return terkumpulArray;
     }
 
 

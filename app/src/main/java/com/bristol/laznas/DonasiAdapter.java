@@ -127,15 +127,26 @@ public class DonasiAdapter extends
         textViewBatasDonasi.setText(contact.getBatasWaktu());
         TextView textViewTargetDonasi = viewHolder.target_donasi;
         TextView textViewTerkumpul = viewHolder.terkumpul;
-        textViewTerkumpul.setText(convertRupiah.ConvertRupiah(contact.getTekumpul()));
         TextView textViewPresentaseProgress = viewHolder.persentaseProgress;
-        Button btnProgress = viewHolder.progress;
-        int persen = hitungPresentase.totalPresentase(contact.getTekumpul(),contact.getTarget());
-        textViewPresentaseProgress.setText(String.valueOf(persen) + "%" );
         ProgressBar progressBar = viewHolder.progressBar;
         progressBar.setMax(100);
+//        if(convertRupiah.isInteger(contact.getTekumpul())) {
+            textViewTerkumpul.setText(convertRupiah.ConvertRupiah(contact.getTekumpul()));
+            int persen = hitungPresentase.totalPresentase(contact.getTekumpul(),contact.getTarget());
+            textViewPresentaseProgress.setText(String.valueOf(persen) + "%" );
+            progressBar.setProgress(persen);
+//        }else{
+//            textViewTerkumpul.setText(contact.getTekumpul());
+//        }
 
-        progressBar.setProgress(persen);
+//        textViewTerkumpul.setText(convertRupiah.ConvertRupiah(contact.getTekumpul()));
+
+        Button btnProgress = viewHolder.progress;
+
+
+
+
+
 
         TextView textViewDeskripsiDonasi = viewHolder.deskripsiDonasi;
         textViewDeskripsiDonasi.setText(contact.getDeskripsi());

@@ -86,9 +86,10 @@ public class ProfilFragmentLaznas extends Fragment {
         rootViewProfil = inflater.inflate(R.layout.fragment_profil, parent, false);
         ivPhoto = (ImageView) rootViewProfil.findViewById(R.id.fotoPengguna);
         tvNama = (TextView) rootViewProfil.findViewById(R.id.namaPengguna);
+        tvNama.setText(sessionManager.getName());
         //parent.getId();
         //new ProfilFragmentLaznas.AttemptLogin().execute("");
-        test();
+//        test();
         //mAuthProgressDialog = new ProgressDialog(getContext());
         //mAuthProgressDialog.setTitle("Loading..");
         //mAuthProgressDialog.setMessage("Please wait.");

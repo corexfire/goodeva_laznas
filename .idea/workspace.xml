@@ -10,7 +10,23 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d1d32ac-d97e-4109-bc67-17bd7a07b50e" name="Default" comment="" />
+    <list default="true" id="1d1d32ac-d97e-4109-bc67-17bd7a07b50e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/javaCompile.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/ConvertRupiah.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/ConvertRupiah.java" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,38 +51,47 @@
       <file leaf-file-name="DonasiAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="69" column="64" lean-forward="false" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
+            <state relative-caret-position="184">
+              <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+              <folding>
+                <element signature="e#6539#7316#0" expanded="true" />
+                <element signature="e#7315#7316#0" expanded="true" />
+                <element signature="e#7368#8145#0" expanded="true" />
+                <element signature="e#8144#8145#0" expanded="true" />
+                <element signature="e#8680#9449#0" expanded="true" />
+                <element signature="e#9448#9449#0" expanded="true" />
+                <element signature="e#9925#9926#0" expanded="true" />
+                <element signature="e#9964#9965#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SahabatModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-442">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/AppConfig.java">
+      <file leaf-file-name="ConvertRupiah.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/ConvertRupiah.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+            <state relative-caret-position="39">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DonasiTabFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiTabFragment.java">
+      <file leaf-file-name="DonasiModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BerandaFragmentLaznas.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/BerandaFragmentLaznas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="80" column="50" lean-forward="true" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="96" />
+            <state relative-caret-position="100">
+              <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -75,51 +100,10 @@
       <file leaf-file-name="DonasiFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2620">
-              <caret line="341" column="0" lean-forward="false" selection-start-line="341" selection-start-column="0" selection-end-line="341" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfilFragmentLaznas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4129">
-              <caret line="313" column="34" lean-forward="false" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MasukActivityLaznas.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/MasukActivityLaznas.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2890">
-              <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="330" column="68" lean-forward="false" selection-start-line="330" selection-start-column="68" selection-end-line="330" selection-end-column="68" />
               <folding>
-                <element signature="e#3682#3731#0" expanded="true" />
-                <element signature="e#3931#3998#0" expanded="true" />
-                <element signature="e#5060#5075#0" expanded="true" />
-                <element signature="e#7961#8681#0" expanded="true" />
-                <element signature="e#8353#8618#0" expanded="true" />
-                <element signature="e#8617#8618#0" expanded="true" />
-                <element signature="e#8680#8681#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/utils/SessionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-303">
-              <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-              <folding>
-                <element signature="e#2659#2660#0" expanded="true" />
-                <element signature="e#2723#2724#0" expanded="true" />
-                <element signature="e#3912#3913#0" expanded="true" />
-                <element signature="e#3981#3982#0" expanded="true" />
+                <element signature="e#11656#11671#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,21 +112,51 @@
       <file leaf-file-name="LaznasApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="159">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_acara_laznas.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_acara_laznas.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="DonasiTabFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiTabFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1461">
-              <caret line="229" column="29" lean-forward="false" selection-start-line="229" selection-start-column="29" selection-end-line="229" selection-end-column="29" />
+            <state relative-caret-position="149">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HitungPresentase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/HitungPresentase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProfilFragmentLaznas.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="284" column="40" lean-forward="false" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="40" />
+              <folding>
+                <element signature="e#3492#3493#0" expanded="true" />
+                <element signature="e#3567#3568#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SahabatAmilFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1921">
+              <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -154,7 +168,13 @@
     <findStrings>
       <find>donasi</find>
       <find>((LaznasApp)</find>
+      <find>uid</find>
+      <find>tvNama</find>
+      <find>(LaznasApp)</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -2184,16 +2204,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiTabFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/utils/SessionManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/MasukActivityLaznas.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_acara_laznas.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/AppConfig.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/ConvertRupiah.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java" />
       </list>
     </option>
   </component>
@@ -2202,6 +2223,7 @@
     <option name="width" value="1380" />
     <option name="height" value="743" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="AndroidView" proportions="" version="1">
       <flattenPackages />
@@ -2473,6 +2495,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1380" height="743" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2483,9 +2506,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0017006802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31462586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2530,8 +2553,32 @@
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java</url>
+          <line>274</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2540,7 +2587,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2329">
           <caret line="160" column="57" lean-forward="false" selection-start-line="160" selection-start-column="57" selection-end-line="160" selection-end-column="57" />
-          <folding />
+          <folding>
+            <element signature="e#6539#7316#0" expanded="true" />
+            <element signature="e#7315#7316#0" expanded="true" />
+            <element signature="e#7368#8145#0" expanded="true" />
+            <element signature="e#8144#8145#0" expanded="true" />
+            <element signature="e#8680#9449#0" expanded="true" />
+            <element signature="e#9448#9449#0" expanded="true" />
+            <element signature="e#9925#9926#0" expanded="true" />
+            <element signature="e#9964#9965#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2567,14 +2623,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004">
-          <caret line="51" column="44" lean-forward="false" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -2633,23 +2681,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/utils/SessionManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-303">
           <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
           <folding>
-            <element signature="e#2659#2660#0" expanded="true" />
-            <element signature="e#2723#2724#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
-            <element signature="e#3981#3982#0" expanded="true" />
+            <element signature="e#2659#2660#0" expanded="false" />
+            <element signature="e#2723#2724#0" expanded="false" />
+            <element signature="e#3912#3913#0" expanded="false" />
+            <element signature="e#3981#3982#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2658,14 +2698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="69" column="64" lean-forward="false" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -2681,50 +2713,163 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/MasukActivityLaznas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2890">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding>
-            <element signature="e#3682#3731#0" expanded="true" />
-            <element signature="e#3931#3998#0" expanded="true" />
-            <element signature="e#5060#5075#0" expanded="true" />
-            <element signature="e#7961#8681#0" expanded="true" />
-            <element signature="e#8353#8618#0" expanded="true" />
-            <element signature="e#8617#8618#0" expanded="true" />
-            <element signature="e#8680#8681#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_beli_tiket_laznas.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4129">
-          <caret line="313" column="34" lean-forward="false" selection-start-line="313" selection-start-column="22" selection-end-line="313" selection-end-column="34" />
+        <state relative-caret-position="87">
+          <caret line="137" column="57" lean-forward="false" selection-start-line="137" selection-start-column="57" selection-end-line="137" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DetailPembayaranZakatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2620">
-          <caret line="341" column="0" lean-forward="false" selection-start-line="341" selection-start-column="0" selection-end-line="341" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiTabFragment.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ZakatActivityLaznas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="1819">
+          <caret line="253" column="48" lean-forward="false" selection-start-line="253" selection-start-column="48" selection-end-line="253" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/BerandaFragmentLaznas.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="80" column="50" lean-forward="true" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="96" />
+        <state relative-caret-position="-12258">
+          <caret line="80" column="50" lean-forward="false" selection-start-line="80" selection-start-column="50" selection-end-line="80" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="107" column="36" lean-forward="false" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/MasukActivityLaznas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="91" column="24" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="24" />
+          <folding>
+            <element signature="e#3682#3731#0" expanded="false" />
+            <element signature="e#3931#3998#0" expanded="false" />
+            <element signature="e#5060#5075#0" expanded="false" />
+            <element signature="e#7961#8681#0" expanded="false" />
+            <element signature="e#8353#8618#0" expanded="false" />
+            <element signature="e#8617#8618#0" expanded="false" />
+            <element signature="e#8680#8681#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/Pager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/ProfilFragmentLaznas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="284" column="40" lean-forward="false" selection-start-line="284" selection-start-column="29" selection-end-line="284" selection-end-column="40" />
+          <folding>
+            <element signature="e#3492#3493#0" expanded="true" />
+            <element signature="e#3567#3568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatAmilFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1921">
+          <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/HitungPresentase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiTabFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="330" column="68" lean-forward="false" selection-start-line="330" selection-start-column="68" selection-end-line="330" selection-end-column="68" />
+          <folding>
+            <element signature="e#11656#11671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/LaznasApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/helper/ConvertRupiah.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding>
+            <element signature="e#6539#7316#0" expanded="true" />
+            <element signature="e#7315#7316#0" expanded="true" />
+            <element signature="e#7368#8145#0" expanded="true" />
+            <element signature="e#8144#8145#0" expanded="true" />
+            <element signature="e#8680#9449#0" expanded="true" />
+            <element signature="e#9448#9449#0" expanded="true" />
+            <element signature="e#9925#9926#0" expanded="true" />
+            <element signature="e#9964#9965#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/SahabatModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bristol/laznas/DonasiModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
           <folding />
         </state>
       </provider>

@@ -26,4 +26,17 @@ public class ConvertRupiah {
         hasil = hasil.replace(".", "");
         return  hasil;
     }
+
+    public boolean isInteger( String input )
+    {
+        try
+        {
+            Integer.parseInt( input );
+            return true;
+        }
+        catch( Exception e)
+        {
+            return false;
+        }
+    }
 }
