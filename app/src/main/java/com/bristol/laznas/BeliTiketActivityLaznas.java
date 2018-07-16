@@ -105,15 +105,18 @@ public class BeliTiketActivityLaznas extends AppCompatActivity {
             tvTarget.setText(convertRupiah.ConvertRupiah(target) );
             tvTanggal.setText(batas_waktu);
             tvNomorPembayaran.setText(nomor_pembayaran);
-            if(nama.toLowerCase().contains("gerai")){
-                tunai.setVisibility(View.VISIBLE);
-                transferAtm.setVisibility(View.GONE);
-                rTunai.setChecked(true);
-            }else{
-                tunai.setVisibility(View.GONE);
-                transferAtm.setVisibility(View.VISIBLE);
-                va.setChecked(true);
-            }
+//            if(nama.toLowerCase().contains("gerai")){
+//                tunai.setVisibility(View.VISIBLE);
+//                transferAtm.setVisibility(View.GONE);
+//                rTunai.setChecked(true);
+//            }else{
+//                tunai.setVisibility(View.GONE);
+//                transferAtm.setVisibility(View.VISIBLE);
+//                va.setChecked(true);
+//            }
+            tunai.setVisibility(View.VISIBLE);
+            transferAtm.setVisibility(View.VISIBLE);
+            rTunai.setChecked(true);
             new DownloadImageTask(tvGambar).execute(gambar);
 
         }

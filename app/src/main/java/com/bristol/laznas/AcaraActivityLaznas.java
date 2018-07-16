@@ -326,6 +326,7 @@ public class AcaraActivityLaznas extends AppCompatActivity {
                     intent.putExtra("nomor_pembayaran", order_id);
 
                     startActivity(intent);
+
                 } else {
                     pDialog.dismiss();
                     Log.d("Login attempt Front", "Failed");
@@ -343,7 +344,7 @@ public class AcaraActivityLaznas extends AppCompatActivity {
          * **/
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once product deleted
-            //pDialog.dismiss();
+            pDialog.dismiss();
 
 
 

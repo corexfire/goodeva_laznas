@@ -50,6 +50,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Segera lakukan pembayaran sebelum"
@@ -64,11 +65,12 @@
                         android:id="@+id/tanggalPembayaran"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="5 Januari 2017"
+                        android:text="Anda berhasil donasi sebesar :"
                         android:textSize="16dp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:visibility="gone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@id/tanggalPembayaran"
@@ -104,6 +106,7 @@
 
 
                 <TextView
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Silahkan cek email Anda dan lanjutkan pembayaran berdasarkan instruksi yang ada pada email Anda."
