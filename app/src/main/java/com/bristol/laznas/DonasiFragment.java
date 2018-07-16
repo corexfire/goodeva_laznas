@@ -166,12 +166,12 @@ public class DonasiFragment extends Fragment {
             ProgressDialog mAuthProgressDialog;
             String nama = mContex.getLocalClassName();
             Log.d("class", nama);
-            pDialogProfil3 = new ProgressDialog(view1.getContext());
-            //pDialog.setMessage("Loading...");
-            pDialogProfil3.setMessage("Loading Content...");
-            pDialogProfil3.setIndeterminate(false);
-            pDialogProfil3.setCancelable(true);
-            pDialogProfil3.show();
+//            pDialogProfil3 = new ProgressDialog(view1.getContext());
+//            //pDialog.setMessage("Loading...");
+//            pDialogProfil3.setMessage("Loading Content...");
+//            pDialogProfil3.setIndeterminate(false);
+//            pDialogProfil3.setCancelable(true);
+//            pDialogProfil3.show();
         }
 
         @Override
@@ -289,6 +289,10 @@ public class DonasiFragment extends Fragment {
                                     batasWaktuArray.add(batas_waktu);
                                     deskripsiArray.add(deskripsi);
                                     imageArray.add(image);
+                                    donasi = DonasiModel.createDonasiList(nidArray, judulArray, targetArray, batasWaktuArray,
+                                            deskripsiArray, imageArray, terkumpulArray);
+                                    mAdapter = new DonasiAdapter(getActivity(), donasi);
+//                                    mListRecyclerViewAcara.setAdapter(mAdapter);
                                 }
                             }
                         }
@@ -300,7 +304,7 @@ public class DonasiFragment extends Fragment {
                     }
                 }
                 //((LaznasApp) MasukActivityLaznas.this.getApplication()).setUid(uid);
-                pDialogProfil3.dismiss();
+//                pDialogProfil3.dismiss();
             } else {
                 Log.d("Login attempt Front", "Login Failed");
             }
@@ -317,7 +321,7 @@ public class DonasiFragment extends Fragment {
          * **/
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once product deleted
-            pDialogProfil3.dismiss();
+//            pDialogProfil3.dismiss();
             //Perform all UI changes here
             //tvNama.setText(name);
 
@@ -330,9 +334,9 @@ public class DonasiFragment extends Fragment {
             ((LaznasApp) getActivity().getApplication()).setImageArray(imageArray);
             ((LaznasApp) getActivity().getApplication()).setTerkumpulArray(terkumpulArray);
 
-            donasi = DonasiModel.createDonasiList(nidArray, judulArray, targetArray, batasWaktuArray,
-                    deskripsiArray, imageArray, terkumpulArray);
-            mAdapter = new DonasiAdapter(getActivity(), donasi);
+//            donasi = DonasiModel.createDonasiList(nidArray, judulArray, targetArray, batasWaktuArray,
+//                    deskripsiArray, imageArray, terkumpulArray);
+//            mAdapter = new DonasiAdapter(getActivity(), donasi);
             mListRecyclerViewAcara.setAdapter(mAdapter);
 
 
