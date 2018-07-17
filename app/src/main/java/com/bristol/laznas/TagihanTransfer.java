@@ -2,6 +2,7 @@ package com.bristol.laznas;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -18,8 +19,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-@EActivity(R.layout.activity_tagihan)
-public class TagihanActivity extends AppCompatActivity {
+@EActivity(R.layout.activity_tagihan_transfer)
+public class TagihanTransfer extends AppCompatActivity {
 
     private String deskripsi;
     private String nama;
@@ -27,13 +28,12 @@ public class TagihanActivity extends AppCompatActivity {
     private String target;
     private String gambar;
     private String donasi;
-    private static final String TAG = TagihanActivity.class.getSimpleName();
+    private static final String TAG = TagihanTransfer.class.getSimpleName();
 
     @ViewById(R.id.tvTotal)
     TextView tvTotal;
     @ViewById(R.id.tanggalPembayaran)
     TextView tvTanggal;
-
     @AfterViews
     void init() {
         Intent intent = this.getIntent();
@@ -70,7 +70,7 @@ public class TagihanActivity extends AppCompatActivity {
             String outputNomor = dfmt.format(frmt);
 
             tvTotal.setText("Rp " + outputNomor  + "");
-//            tvTanggal.setText(""+currentDay+"-"+currentMonth+"-"+currentYear);
+            tvTanggal.setText(""+currentDay+"-"+currentMonth+"-"+currentYear);
 
         }
     }
@@ -83,5 +83,4 @@ public class TagihanActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
-
 }

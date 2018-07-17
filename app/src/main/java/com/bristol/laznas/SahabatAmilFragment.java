@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bristol.laznas.helper.AppConfig;
@@ -41,6 +42,7 @@ public class SahabatAmilFragment extends Fragment {
 
     ListView lv;
     Context context;
+    ProgressBar progressBar;
     //private FirebaseRecyclerAdapter<Acara, BerandaFragment.ListViewHolder> mFirebaseAdapter;
     //private DatabaseReference mFirebaseDatabaseReference;
     private RecyclerView mListRecyclerViewAcara;
@@ -98,6 +100,7 @@ public class SahabatAmilFragment extends Fragment {
         mListRecyclerViewAcara = (RecyclerView) rootViewDonasi.findViewById(R.id.rv_Donasi);
         mListRecyclerViewAcara.setLayoutManager(mLinearLayoutManager);
 
+        progressBar = (ProgressBar) rootViewDonasi.findViewById(R.id.progressBar);
 //        int flag = ((LaznasApp) getActivity().getApplication()).getFlag();
 //        Log.v(TAG, "flag: " + flag);
 //        if(flag != 2){
@@ -163,6 +166,7 @@ public class SahabatAmilFragment extends Fragment {
             ProgressDialog mAuthProgressDialog;
             String nama = mContex.getLocalClassName();
             Log.d("class", nama);
+            progressBar.setVisibility(View.VISIBLE);
 //            pDialogProfil3 = new ProgressDialog(view1.getContext());
 //            //pDialog.setMessage("Loading...");
 //            pDialogProfil3.setMessage("Mohon Tunggu...");
@@ -326,7 +330,7 @@ public class SahabatAmilFragment extends Fragment {
 //            ((LaznasApp) getActivity().getApplication()).setDeskripsiArray(deskripsiArray);
 //            ((LaznasApp) getActivity().getApplication()).setImageArray(imageArray);
 //            ((LaznasApp) getActivity().getApplication()).setTerkumpulArray(terkumpulArray);
-
+            progressBar.setVisibility(View.GONE);
             donasi = SahabatModel.createDonasiList(nidArray, judulArray, targetArray, batasWaktuArray,
                     deskripsiArray, imageArray, terkumpulArray);
             mAdapter = new SahabatAdapter(getActivity(), donasi);

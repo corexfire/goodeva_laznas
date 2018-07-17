@@ -170,12 +170,12 @@
 
 
 
-                            <RadioButton
-                                android:id="@+id/radioTunai"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:onClick="onRadioButtonClicked"
-                                android:text='Tunai'/>
+                            <!--<RadioButton-->
+                                <!--android:id="@+id/radioTunai"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:onClick="onRadioButtonClicked"-->
+                                <!--android:text='Tunai'/>-->
 
 
 
@@ -219,6 +219,13 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/radioTunai"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:onClick="onRadioButtonClicked"
+                                android:text='Tunai'/>
 
 
 

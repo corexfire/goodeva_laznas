@@ -114,9 +114,10 @@ public class BeliTiketActivityLaznas extends AppCompatActivity {
 //                transferAtm.setVisibility(View.VISIBLE);
 //                va.setChecked(true);
 //            }
-            tunai.setVisibility(View.VISIBLE);
+//            tunai.setVisibility(View.VISIBLE);
             transferAtm.setVisibility(View.VISIBLE);
             rTunai.setChecked(true);
+            va.setChecked(false);
             new DownloadImageTask(tvGambar).execute(gambar);
 
         }
@@ -238,17 +239,29 @@ public class BeliTiketActivityLaznas extends AppCompatActivity {
                 //Log.d("Order id = ", order_id);
                 pDialog.dismiss();
 
-                Intent intent = new Intent(BeliTiketActivityLaznas.this, TagihanActivity_.class);
+                if(rTunai.isChecked()){
+                    Intent intent = new Intent(BeliTiketActivityLaznas.this, TagihanActivity_.class);
+                    intent.putExtra("donasi", donasi);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                    startActivity(intent);
+                    finish();
+                }else{
+                    Intent intent = new Intent(BeliTiketActivityLaznas.this, TagihanTransfer_.class);
+                    intent.putExtra("donasi", donasi);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+
+                    startActivity(intent);
+                    finish();
+                }
+
+
 //                intent.putExtra("deskripsi", deskripsi);
 //                intent.putExtra("nama", nama);
 //                intent.putExtra("batas_waktu", batas_waktu);
 //                intent.putExtra("target", target);
 //                intent.putExtra("gambar", gambar);
-                intent.putExtra("donasi", donasi);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
 
-                startActivity(intent);
-                finish();
             } else {
                 pDialog.dismiss();
                 Log.d("Login attempt Front", "Failed");

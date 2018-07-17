@@ -55,19 +55,19 @@ buildscript {
 }*/
 
 dependencies {
-    implementation  fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:support-v4:25.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:appcompat-v7:25.1.0'
     annotationProcessor "org.androidannotations:androidannotations:$AAVersion"
-    implementation  "org.androidannotations:androidannotations-api:$AAVersion"
+    implementation "org.androidannotations:androidannotations-api:$AAVersion"
     implementation 'com.android.support:design:25.1.0'
-    implementation  'com.roughike:bottom-bar:2.0.2'
-    implementation  'com.google.android.gms:play-services-appindexing:9.4.0'
+    implementation 'com.roughike:bottom-bar:2.0.2'
+    implementation 'com.google.android.gms:play-services-appindexing:9.4.0'
     // Google
-    implementation  'com.google.android.gms:play-services-auth:9.4.0'
-    implementation  'com.google.android.gms:play-services-appinvite:9.4.0'
+    implementation 'com.google.android.gms:play-services-auth:9.4.0'
+    implementation 'com.google.android.gms:play-services-appinvite:9.4.0'
     // Firebase
     implementation 'com.google.firebase:firebase-core:9.4.0'
     implementation 'com.google.firebase:firebase-database:9.4.0'

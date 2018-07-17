@@ -60,7 +60,8 @@
             android:name=".ZakatOnlineActivity_"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".PanduanActivity_" />
-        <activity android:name=".PanduanDetailActivity_"></activity>
+        <activity android:name=".PanduanDetailActivity_" />
+        <activity android:name=".TagihanTransfer_"></activity>
     </application>
 
 </manifest>

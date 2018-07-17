@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.bristol.laznas.helper.AppConfig;
@@ -44,6 +45,7 @@ public class DonasiFragment extends Fragment {
 
     ListView lv;
     Context context;
+    ProgressBar progressBar;
     //private FirebaseRecyclerAdapter<Acara, BerandaFragment.ListViewHolder> mFirebaseAdapter;
     //private DatabaseReference mFirebaseDatabaseReference;
     private RecyclerView mListRecyclerViewAcara;
@@ -99,6 +101,7 @@ public class DonasiFragment extends Fragment {
 
         mListRecyclerViewAcara = (RecyclerView) rootViewDonasi.findViewById(R.id.rv_Donasi);
         mListRecyclerViewAcara.setLayoutManager(mLinearLayoutManager);
+        progressBar = (ProgressBar) rootViewDonasi.findViewById(R.id.progressBar);
 
         int flag = ((LaznasApp) getActivity().getApplication()).getFlag();
         Log.v(TAG, "flag: " + flag);
@@ -166,6 +169,7 @@ public class DonasiFragment extends Fragment {
             ProgressDialog mAuthProgressDialog;
             String nama = mContex.getLocalClassName();
             Log.d("class", nama);
+            progressBar.setVisibility(View.VISIBLE);
 //            pDialogProfil3 = new ProgressDialog(view1.getContext());
 //            //pDialog.setMessage("Loading...");
 //            pDialogProfil3.setMessage("Loading Content...");
@@ -337,6 +341,7 @@ public class DonasiFragment extends Fragment {
 //            donasi = DonasiModel.createDonasiList(nidArray, judulArray, targetArray, batasWaktuArray,
 //                    deskripsiArray, imageArray, terkumpulArray);
 //            mAdapter = new DonasiAdapter(getActivity(), donasi);
+            progressBar.setVisibility(View.GONE);
             mListRecyclerViewAcara.setAdapter(mAdapter);
 
 
