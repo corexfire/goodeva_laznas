@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.bristol.laznas.helper.AppConfig;
 import com.bristol.laznas.model.JSONParser;
+import com.bristol.laznas.utils.SessionManager;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -38,6 +39,7 @@ public class DetailPembayaranZakatActivity extends AppCompatActivity {
     private String gambar;
     private String donasi;
     private String nomor_pembayaran;
+    SessionManager sessionManager;
 
     @ViewById(R.id.judulAcara)
     TextView tvJudul;
@@ -56,6 +58,7 @@ public class DetailPembayaranZakatActivity extends AppCompatActivity {
     private static final String TAG = DetailPembayaranZakatActivity.class.getSimpleName();
     @AfterViews
     void init() {
+        sessionManager =  new SessionManager(this);
 //        Spinner spinner = (Spinner) findViewById(R.id.spinnerJumlahTiket);
 //        // Create an ArrayAdapter using the string array and a default spinner layout
 //        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -155,11 +158,11 @@ public class DetailPembayaranZakatActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            pDialog = new ProgressDialog(DetailPembayaranZakatActivity.this);
-            pDialog.setMessage("Loading...");
-            pDialog.setIndeterminate(false);
-            pDialog.setCancelable(true);
-            pDialog.show();
+//            pDialog = new ProgressDialog(DetailPembayaranZakatActivity.this);
+//            pDialog.setMessage("Loading...");
+//            pDialog.setIndeterminate(false);
+//            pDialog.setCancelable(true);
+//            pDialog.show();
         }
 
         @Override
@@ -172,7 +175,7 @@ public class DetailPembayaranZakatActivity extends AppCompatActivity {
             //String pass = "123456";
             //String nid_attempt = nid;
             //String nominal = jumlahDonasi+"00";
-            String uid = ((LaznasApp) getApplication()).getUid();
+            String uid = sessionManager.getUID();
             Log.v(TAG, "uid: " + uid);
 
             //try {
@@ -204,7 +207,7 @@ public class DetailPembayaranZakatActivity extends AppCompatActivity {
                     //nomorPembayaran += 300000000;
                     //order_id = Integer.toString(nomorPembayaran);
                     //Log.d("Order id = ", order_id);
-                    pDialog.dismiss();
+//                    pDialog.dismiss();
 
                     Intent intent = new Intent(DetailPembayaranZakatActivity.this, TagihanActivity_.class);
                     intent.putExtra("deskripsi", deskripsi);

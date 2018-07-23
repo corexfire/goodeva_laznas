@@ -7,25 +7,27 @@
     android:background="@color/putih"
     tools:context="com.bristol.laznas.BeliTiketActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="?attr/actionBarTheme">-->
 
-        <ImageView
-            style="@style/toolbarIcon"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/laznas" />
+        <!--<ImageView-->
+            <!--style="@style/toolbarIcon"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:src="@drawable/laznas" />-->
 
-        <TextView
-            style="@style/toolbarText"
-            android:text="Donasi" />
+        <!--<TextView-->
+            <!--style="@style/toolbarText"-->
+            <!--android:text="Donasi" />-->
 
-    </android.support.v7.widget.Toolbar>
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <include layout="@layout/toolbar" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -212,7 +214,12 @@
     </ScrollView>
 
     <Button
-        style="@style/buttonBawah"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+        android:textColor="@color/orangetua"
+        android:background="@color/orangegelap"
         android:onClick="toTagihan"
         android:text="Lanjutkan" />
 
